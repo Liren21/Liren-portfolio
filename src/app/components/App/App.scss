@@ -1,0 +1,37 @@
+
+body{
+  background-color: #093269;
+  font-family: 'Nunito', sans-serif !important;
+}
+.app {
+  margin: 10rem 0;
+
+  code{
+    font-size: small;
+    font-family: monospace;
+  }
+}
+
+
+
+.btn{
+  border-radius: 10px;
+  &-outline-light{
+    border: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1rem!important;
+
+    &:hover{
+      background-color: #F2529F;
+      color: white;
+    }
+  }
+}
+.fa-home:before,{
+  font-size: 1.5rem!important;
+}
+.fa-briefcase:before{
+  font-size: 1.2rem!important;
+}

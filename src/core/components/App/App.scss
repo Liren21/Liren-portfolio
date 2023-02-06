@@ -1,0 +1,148 @@
+
+
+
+.app, .modal {
+  font-size: small;
+
+  .icon-action {
+    font-size: large;
+  }
+
+  .accordion {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    margin-top: 20px;
+    //* > * > * {
+    //  z-index: -1;
+    //}
+  }
+
+  .accordion-button:hover {
+    z-index: inherit;
+  }
+
+  .accordion-header {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+
+    .accordion-button {
+      padding: .5rem 1rem;
+    }
+  }
+
+  .nav-tabs {
+    margin: 0 !important;
+  }
+
+  .tab-content {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-top: 0;
+    border-radius: .25rem;
+  }
+
+  .tab-pane {
+    padding: 25px;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: rgb(33, 37, 41);
+  }
+
+  .card-title {
+    font-size: medium;
+    margin: .2rem 0;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  input, select, button, textarea, a.btn {
+    font-size: small;
+  }
+
+  .form-label {
+    font-weight: 500;
+  }
+
+  .btn {
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+
+    .dropdown-item {
+      padding: 0;
+
+      a {
+        padding: 5px 50px;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .btn-outline-primary {
+    color: #4995b3;
+    border-color: #4995b3;
+
+    &:hover {
+      color: #fff;
+      border-color: #4995b3;
+      background: #4995b3;
+    }
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #4995b3;
+    border-color: #4995b3;
+
+    //&:hover{
+    //  color: #fff;
+    //  border-color: #EECFBA;
+    //  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    //}
+  }
+
+  .page-item.active .page-link {
+    z-index: auto;
+    color: #fff;
+    background-color: #4995b3;
+    border-color: #4995b3;
+  }
+
+  a {
+    color: #4995b3;
+  }
+
+  .react-datepicker-wrapper {
+    display: block !important;
+  }
+
+}
+
+@media screen and (max-width: 755px) {
+  .app, .modal {
+    .card-body {
+      padding: 1rem 5px;
+    }
+
+    .accordion-body {
+      padding: 0;
+    }
+
+    .nav-tabs {
+      margin: 0 !important;
+    }
+
+    .tab-pane {
+      padding: 5px;
+    }
+  }
+
+}
