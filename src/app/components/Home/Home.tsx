@@ -10,11 +10,6 @@ import { observer } from 'mobx-react-lite'
 
 export default observer(() => {
     return (
-        <Card className={'home-form'}>
-
-            <Card.Body>
-
-            </Card.Body>
-        </Card>
+       <></>
     )
 })
