@@ -1,0 +1,11 @@
+.accordion-item{
+  margin-bottom: 2rem;
+  border-radius: 10px!important;
+}
+.custom-accordion{
+  border: none!important;
+  padding:0 8rem;
+}
+.app .accordion-header .accordion-button, .modal .accordion-header .accordion-button{
+  border-radius: 16px!important;
+}

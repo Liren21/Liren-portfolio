@@ -1,31 +1,11 @@
 
-
-.home-form {
-
-
-  .row-body {
-    justify-content: space-around;
-    display: flex;
-
-    .card-form {
-      width: 23rem;
-      height: 400px !important;
-      margin: 1rem;
-
-      .icon-container {
-        width: 100%;
-        text-align: center;
-
-        i {
-          margin: 10% 0 0 0;
-          font-size: 4rem;
-        }
-      }
-
-      .show-button {
-        text-align: center;
-        max-height: 100px;
-      }
-    }
+.home {
+  &-title-name {
+    font-size: 2rem;
+    color: white;
   }
+}
+
+.fa-github:before, .fa-vk:before, .fa-telegram:before {
+  font-size: 2rem;
 }

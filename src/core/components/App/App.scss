@@ -52,9 +52,6 @@
     margin: .2rem 0;
   }
 
-  .card {
-    margin-top: 20px;
-  }
 
   input, select, button, textarea, a.btn {
     font-size: small;
@@ -97,30 +94,7 @@
     }
   }
 
-  .btn-primary {
-    color: #fff;
-    background-color: #4995b3;
-    border-color: #4995b3;
 
-    //&:hover{
-    //  color: #fff;
-    //  border-color: #EECFBA;
-    //  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
-    //}
-  }
-
-  .page-item.active .page-link {
-    z-index: auto;
-    color: #fff;
-    background-color: #4995b3;
-    border-color: #4995b3;
-  }
-
-
-
-  .react-datepicker-wrapper {
-    display: block !important;
-  }
 
 }
 
