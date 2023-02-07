@@ -23,7 +23,7 @@ export const App = observer((): JSX.Element => {
     return (
         <div className={'app'}>
             <HeaderApp />
-            <Container>
+            <Container className={'main-body'}>
                 <LoaderOverlay loading={appStore.loading} />
                 <Router />
             </Container>

@@ -1,4 +1,4 @@
-
+$my-b-r: 16px;
 body {
   background-color: #093269;
   font-family: 'Nunito', sans-serif !important;
@@ -13,10 +13,23 @@ body {
   }
 }
 
+.main-body {
+  padding-left: 7rem;
+}
 
 .btn {
   border-radius: 10px;
-font-size: 1rem!important;
+  font-size: 1rem !important;
+  border: none;
+  &-light {
+    background-color: rgba(0, 0, 0, 0.05);
+  &:hover{
+    background-color: #F2529F;
+    color: white;
+    border: none;
+  }
+  }
+
   &-outline-light {
     border: none;
 
@@ -35,10 +48,14 @@ font-size: 1rem!important;
   }
 }
 
-.fa-home:before, {
+.fa-home:before,.fa-info-circle:before,.fa-sign-in:before {
   font-size: 1.5rem !important;
 }
 
 .fa-briefcase:before {
   font-size: 1.2rem !important;
+}
+
+.card {
+  border-radius: $my-b-r;
 }

@@ -1,24 +1,24 @@
 import React from 'react'
 import {observer} from 'mobx-react-lite'
 import './Job.scss'
-import {Accordion, Button, Col, Row} from "react-bootstrap";
+import { Alert, Button, Card,} from "react-bootstrap";
 
 export default observer(() => {
     const jodData = [
         {
-            title: 'Портфоли студента e-service',
+            title: 'Портфоли студента eservice',
             descr: 'Порфолио где студент может делать то и то',
             link: '',
             id: '1'
         },
         {
-            title: 'Расписание для ОмГУ',
+            title: 'Расписание для ОмГУ ',
             descr: 'Порфолио где студент может делать то и то',
             link: '',
             id: '2'
         },
         {
-            title: 'Приложение Хранилище:Займ, микрозаймы',
+            title: 'Хранилище:Займ, микрозаймы',
             descr: 'Порфолио где студент может делать то и то',
             link: '',
             id: '3'
@@ -26,30 +26,33 @@ export default observer(() => {
     ]
     return (
 
-       <>
-           <Alert variant={'success'}>
-                   В данных работах делался только Frontend.
-           </Alert>
-           <Accordion className={'custom-accordion'}>
-               {
-                   jodData.map((s) => (
-                       <Row>
-                           <Col md={10}>
-                               <Accordion.Item eventKey={s.id}>
-                                   <Accordion.Header>{s.title}</Accordion.Header>
-                                   <Accordion.Body>
-                                       {s.descr}
-                                   </Accordion.Body>
-                               </Accordion.Item>
-                           </Col>
-                           <Col md={2}>
-                               <Button variant={"outline-light"} className={'btn-job'}>Посетить</Button>
-                           </Col>
-                       </Row>
+        <>
+            <Alert variant={'success'}>
+                В данных работах делался только Frontend.
+            </Alert>
+            <div className={'job-body'}>
+                {
+                    jodData.map((s) => (
 
-                   ))
-               }
-           </Accordion>
-       </>
+                        <Card className={'job-card'} style={{width: '18rem'}}>
+                            <Card.Title>{s.title}</Card.Title>
+                            <Card.Body>
+
+                                <div className={'job-btn'}>
+                                    <Button variant={"light"} className={'job-btn-item'}>
+                                        Подробнее
+                                    </Button>
+                                    <Button  variant={"light"} className={'job-btn-item'}>
+                                        перейти
+                                    </Button>
+                                </div>
+
+                            </Card.Body>
+                        </Card>
+
+                    ))
+                }
+            </div>
+        </>
     )
 })
